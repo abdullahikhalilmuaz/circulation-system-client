@@ -17,7 +17,7 @@ export default function ViewBooks() {
 
   const fetchBooks = async () => {
     try {
-      const response = await fetch("https://circulation-system-server.onrender.com/api/admin/books");
+      const response = await fetch("https://circulation-system-server-ql2i.onrender.com/api/admin/books");
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
@@ -46,7 +46,7 @@ export default function ViewBooks() {
     }
 
     try {
-      const response = await fetch("https://circulation-system-server.onrender.com/api/cart", {
+      const response = await fetch("https://circulation-system-server-ql2i.onrender.com/api/cart", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

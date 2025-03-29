@@ -3,7 +3,7 @@ import { toast } from "react-toastify";
 import "../styles/addRequest.css";
 
 // const role = JSON.parse(localStorage.getItem("dear-user"));
-const URL = "https://circulation-system-server.onrender.com/api/makerequest";
+const URL = "https://circulation-system-server-ql2i.onrender.com/api/makerequest";
 
 const role = JSON.parse(localStorage.getItem("dear-user"));
 export default function AddRequest() {
@@ -64,7 +64,7 @@ export default function AddRequest() {
   // Function to fetch requests
   const fetchRequests = async () => {
     try {
-      const res = await fetch("https://circulation-system-server.onrender.com/api/makerequest/get");
+      const res = await fetch("https://circulation-system-server-ql2i.onrender.com/api/makerequest/get");
       const data = await res.json();
 
       if (!res.ok) {

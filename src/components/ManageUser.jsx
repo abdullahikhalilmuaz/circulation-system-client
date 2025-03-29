@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "../styles/manage.css";
 
-const URL = "https://circulation-system-server.onrender.com/api/users";
+const URL = "https://circulation-system-server-ql2i.onrender.com/api/users";
 
 export default function ManageUser() {
   const [users, setUsers] = useState([]);
